@@ -12846,6 +12846,17 @@ header.masthead .masthead-heading {
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+#portfolio .portfolio-item img {
+  width: 100%;
+  height: 550px;
+  /* Puedes ajustar esta altura */
+  object-fit: cover;
+  /* Mantiene proporción y recorta si es necesario */
+  display: block;
+  border-radius: 0.5rem;
+}
+
+
 .portfolio-modal .modal-dialog {
   margin: 1rem;
   max-width: 100vw;
