@@ -4559,7 +4559,7 @@ fieldset:disabled .btn {
     width: auto !important;
     height: auto !important;
     visibility: visible !important;
-    background-color: transparent !important;
+    /* background-color: transparent !important; */
     border: 0 !important;
     transform: none !important;
     transition: none;
@@ -12612,7 +12612,9 @@ fieldset:disabled .btn {
 
 html {
   scroll-padding-top: 4.5rem;
+  scroll-behavior: smooth;
 }
+
 
 body {
   position: relative;
@@ -12666,10 +12668,20 @@ p {
 }
 
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: #212529;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s ease;
+  z-index: 10;
 }
+
+#mainNav.transparent {
+  background-color: transparent;
+}
+
+#mainNav.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
 
 #mainNav .navbar-toggler {
   padding: 0.75rem;
@@ -12747,14 +12759,14 @@ p {
 }
 
 header.masthead {
-  padding-top: 10.5rem;
+  padding-top: 20.5rem;
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/header-bg.png");
+  /* background-image: url("../assets/header-bg.png"); */
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center center;
+  /* background-position: center center; */
   background-size: auto;
 }
 
@@ -13203,4 +13215,47 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+.header-mision {
+  background: url('header-bg.png') no-repeat center center/cover;
+  height: 200vh;
+  position: relative;
+}
+
+/* Navbar personalizado */
+.navbar-mision {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: transparent;
+}
+
+.navbar-mision.scrolled {
+  background-color: white !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-mision .nav-link {
+  font-weight: 500;
+  color: white !important;
+  transition: color 0.3s;
+}
+
+.navbar-mision.scrolled .nav-link {
+  color: #333 !important;
+}
+
+.navbar-mision .navbar-brand img {
+  height: 50px;
+}
+
+@media (max-width: 992px) {
+  .navbar-mision .nav-link {
+    padding: 0.5rem 1rem;
+    color: #333 !important;
+  }
+
+  .navbar-mision {
+    background-color: white !important;
+  }
 }

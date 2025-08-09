@@ -1,13 +1,13 @@
-/*!
-* Start Bootstrap - Agency v7.0.12 (https://startbootstrap.com/theme/agency)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
 
 window.addEventListener('DOMContentLoaded', event => {
+
+    const nav = document.getElementById('mainNav');
+    nav.classList.add('transparent');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) nav.classList.replace('transparent', 'scrolled');
+        else nav.classList.replace('scrolled', 'transparent');
+    });
 
     // Navbar shrink function
     var navbarShrink = function () {
@@ -51,4 +51,12 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+});
+window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar-mision');
+    if (window.scrollY > 100) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
 });
