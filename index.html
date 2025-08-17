@@ -18,6 +18,7 @@
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/navbar-mision.css" rel="stylesheet" />
     <link href="css/counter.css" rel="stylesheet" />
+    <link href="css/missions.css" rel="stylesheet" />
 </head>
 
 <body id="page-top">
@@ -138,7 +139,7 @@
         </div>
     </section>
 
-    <section class="page-section bg-light" id="portfolio">
+    <!-- <section class="page-section bg-light" id="portfolio">
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Misiones</h2>
@@ -186,7 +187,143 @@
                 </div>
             </div>
         </div>
+    </section> -->
+    
+    <section class="missions-section" id="portfolio">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-heading text-uppercase">Misiones</h2>
+                <h3 class="section-subheading">Llevamos esperanza y transformación a cada rincón del mundo, creando impacto duradero en las comunidades más necesitadas.</h3>
+            </div>
+            
+            <div class="row missions-grid">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="mission-card" data-bs-toggle="modal" data-bs-target="#missionModal1">
+                        <div class="mission-status">Activa</div>
+                        <div class="mission-image">
+                            <img src="assets/img/portfolio/guajira.png" alt="La Guajira" />
+                            <div class="mission-overlay">
+                                <i class="mission-icon fas fa-hand-holding-heart"></i>
+                            </div>
+                        </div>
+                        <div class="mission-info">
+                            <div class="mission-location">Colombia</div>
+                            <h4 class="mission-title">La Guajira</h4>
+                            <p class="mission-preview">Apoyo integral a comunidades wayúu con programas de educación, salud y desarrollo sostenible.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="mission-card" data-bs-toggle="modal" data-bs-target="#missionModal2">
+                        <div class="mission-status">Activa</div>
+                        <div class="mission-image">
+                            <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=400&h=300&fit=crop" alt="Tailandia" />
+                            <div class="mission-overlay">
+                                <i class="mission-icon fas fa-graduation-cap"></i>
+                            </div>
+                        </div>
+                        <div class="mission-info">
+                            <div class="mission-location">Asia</div>
+                            <h4 class="mission-title">Tailandia</h4>
+                            <p class="mission-preview">Programas educativos y de capacitación para jóvenes en situación de vulnerabilidad.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="mission-card" data-bs-toggle="modal" data-bs-target="#missionModal3">
+                        <div class="mission-status">Activa</div>
+                        <div class="mission-image">
+                            <img src="https://images.unsplash.com/photo-1541336032412-2048a678540d?w=400&h=300&fit=crop" alt="Triple Frontera" />
+                            <div class="mission-overlay">
+                                <i class="mission-icon fas fa-users"></i>
+                            </div>
+                        </div>
+                        <div class="mission-info">
+                            <div class="mission-location">Sudamérica</div>
+                            <h4 class="mission-title">Triple Frontera</h4>
+                            <p class="mission-preview">Iniciativas de paz y reconciliación en la región fronteriza entre tres naciones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- Modales mejorados -->
+    <div class="modal fade" id="missionModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Misión La Guajira - Colombia</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/img/portfolio/guajira-modal.png" class="img-fluid mb-3 rounded" alt="La Guajira">
+                    <p class="lead">Transformando vidas en La Guajira a través del desarrollo comunitario integral.</p>
+                    <p>Nuestra misión en La Guajira se centra en empoderar a las comunidades wayúu mediante programas sostenibles de educación, salud y desarrollo económico. Trabajamos de la mano con líderes locales para crear soluciones duraderas que respeten su cultura ancestral.</p>
+                    <h6>Programas activos:</h6>
+                    <ul>
+                        <li>Educación bilingüe wayúu-español</li>
+                        <li>Acceso a agua potable</li>
+                        <li>Formación en oficios tradicionales</li>
+                        <li>Atención médica básica</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="missionModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Misión Tailandia - Asia</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=600&h=300&fit=crop" class="img-fluid mb-3 rounded" alt="Tailandia">
+                    <p class="lead">Construyendo futuro a través de la educación en el sudeste asiático.</p>
+                    <p>En Tailandia desarrollamos programas educativos innovadores para jóvenes en situación de vulnerabilidad, proporcionando herramientas tecnológicas y habilidades para el siglo XXI mientras preservamos los valores culturales locales.</p>
+                    <h6>Programas activos:</h6>
+                    <ul>
+                        <li>Capacitación en tecnología</li>
+                        <li>Programas de liderazgo juvenil</li>
+                        <li>Educación en sostenibilidad</li>
+                        <li>Intercambio cultural</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="missionModal3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Misión Triple Frontera - Sudamérica</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://images.unsplash.com/photo-1541336032412-2048a678540d?w=600&h=300&fit=crop" class="img-fluid mb-3 rounded" alt="Triple Frontera">
+                    <p class="lead">Construyendo puentes de paz en la región fronteriza.</p>
+                    <p>Nuestra misión en la Triple Frontera se enfoca en promover la paz, la reconciliación y el desarrollo conjunto entre las comunidades de tres naciones hermanas, creando oportunidades de crecimiento compartido y entendimiento mutuo.</p>
+                    <h6>Programas activos:</h6>
+                    <ul>
+                        <li>Diálogos interculturales</li>
+                        <li>Proyectos económicos conjuntos</li>
+                        <li>Programas de reconciliación</li>
+                        <li>Desarrollo fronterizo sostenible</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
     <!-- About-->
     <section class="page-section" id="about">
         <div class="container">
