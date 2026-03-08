@@ -145,6 +145,11 @@
             <path
                 d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144H48V416c0 8.8 7.2 16 16 16H512c8.8 0 16-7.2 16-16V224zM0 96C0 60.7 28.7 32 64 32H512c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM96 320c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32s-14.3 32-32 32H128c-17.7 0-32-14.3-32-32zm160 0c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H288c-17.7 0-32-14.3-32-32z" />
         </symbol>
+        <!-- whatsapp -->
+        <symbol id="icon-whatsapp" viewBox="0 0 448 512">
+            <path
+                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.4-8.6-44.6-27.4-16.5-14.7-27.6-32.8-30.8-38.3-3.2-5.6-.3-8.6 2.4-11.4 2.5-2.5 5.5-6.5 8.3-9.7 2.8-3.2 3.7-5.5 5.5-9.3 1.9-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.8 23.5 9.2 31.5 11.8 13.3 4.2 25.4 3.6 35 2.2 10.7-1.5 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+        </symbol>
     </svg>
 
     <!-- Navigation -->
@@ -166,7 +171,8 @@
                     <li class="nav-item"><a class="nav-link" href="#portafolio">Misiones</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">Sobre Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link" href="#team">Equipo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://wa.me/34644526700"
+                            target="_blank">Contacto</a></li>
                 </ul>
             </div>
         </div>
@@ -807,64 +813,13 @@
         </div>
     </div>
 
-    <!-- Contacto -->
-    <section class="page-section" id="contact">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Contáctanos</h2>
-                <h3 class="section-subheading text-muted">Escríbenos para obtener más información.</h3>
-            </div>
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                <div class="row align-items-stretch mb-5">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <input class="form-control" id="name" type="text" placeholder="Tu nombre *"
-                                data-sb-validations="required" />
-                            <div class="invalid-feedback" data-sb-feedback="name:required">Nombre es requerido.</div>
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control" id="email" type="email" placeholder="Tu Email *"
-                                data-sb-validations="required,email" />
-                            <div class="invalid-feedback" data-sb-feedback="email:required">Email es requerido.</div>
-                            <div class="invalid-feedback" data-sb-feedback="email:email">Email no es válido.</div>
-                        </div>
-                        <div class="form-group mb-md-0">
-                            <input class="form-control" id="phone" type="tel" placeholder="Tu Número de Teléfono *"
-                                data-sb-validations="required" />
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">Número de teléfono es
-                                requerido.</div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group form-group-textarea mb-md-0">
-                            <textarea class="form-control" id="message" placeholder="Tu Mensaje"
-                                data-sb-validations="required"></textarea>
-                            <div class="invalid-feedback" data-sb-feedback="message:required">Un mensaje es requerido.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-none" id="submitSuccessMessage">
-                    <div class="text-center text-white mb-3">
-                        <div class="fw-bolder">¡Formulario enviado con éxito!</div>
-                    </div>
-                </div>
-                <div class="d-none" id="submitErrorMessage">
-                    <div class="text-center text-danger mb-3">Error al enviar el mensaje.</div>
-                </div>
-                <div class="text-center">
-                    <button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton"
-                        type="submit">Enviar</button>
-                </div>
-            </form>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer class="footer py-4">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start">Copyright &copy; Women In Mission 2025</div>
+                <div class="col-lg-4 text-lg-start">Copyright &copy; Women In Mission 2025
+                </div>
                 <div class="col-lg-4 my-3 my-lg-0">
                     <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/WomeninMissionOficial/about"
                         aria-label="Twitter">
@@ -886,7 +841,8 @@
                     </a>
                 </div>
                 <div class="col-lg-4 text-lg-end">
-                    <a class="link-dark text-decoration-none me-3" href="#!">Política de Privacidad</a>
+                    <a class="link-dark text-decoration-none me-3" href="#!">Política de
+                        Privacidad</a>
                     <a class="link-dark text-decoration-none" href="#!">Términos de Uso</a>
                 </div>
             </div>
@@ -909,12 +865,17 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg"
                                         alt="La Guajira" style="height: 700px;" loading="lazy" />
                                 </picture>
-                                <p>Trabajamos con el firme propósito de brindar alimento, contención y esperanza a niños
-                                    que viven en condiciones de extrema pobreza. Actualmente sostenemos un comedor donde
-                                    <strong>65 niños reciben un desayuno cada mañana, de lunes a viernes</strong>.
-                                    Nuestro objetivo es expandir esta labor y llegar a <strong>comedores
+                                <p>Trabajamos con el firme propósito de brindar alimento,
+                                    contención y esperanza a niños
+                                    que viven en condiciones de extrema pobreza. Actualmente
+                                    sostenemos un comedor donde
+                                    <strong>65 niños reciben un desayuno cada mañana, de
+                                        lunes a viernes</strong>.
+                                    Nuestro objetivo es expandir esta labor y llegar a
+                                    <strong>comedores
                                         infantiles</strong>,
-                                    asegurando así que más niños puedan acceder, cada día, a un plato de comida.
+                                    asegurando así que más niños puedan acceder, cada día, a
+                                    un plato de comida.
                                 </p>
                                 <ul class="list-inline">
                                     <li>Meta: habilitar y mantener 10 comedores activos</li>
@@ -951,8 +912,10 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg"
                                         alt="Tailandia" style="height: 700px;" loading="lazy" />
                                 </picture>
-                                <p>Se necesitan 350 euros mensuales para seguir manteniendo esta casa que alberga 40
-                                    mujeres con el fin de alejarlas de la prostitución enseñándoles otras profesiones.
+                                <p>Se necesitan 350 euros mensuales para seguir manteniendo
+                                    esta casa que alberga 40
+                                    mujeres con el fin de alejarlas de la prostitución
+                                    enseñándoles otras profesiones.
                                 </p>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
                                     type="button">
@@ -982,11 +945,15 @@
                                 <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg"
                                     alt="Triple Frontera" loading="lazy" />
                                 <ul class="list-inline">
-                                    <li><strong>Comedor para ancianos:</strong> 30 ancianos beneficiarios de una bolsa
-                                        de alimentos y productos de higiene semanalmente. El costo es de 500 euros
+                                    <li><strong>Comedor para ancianos:</strong> 30 ancianos
+                                        beneficiarios de una bolsa
+                                        de alimentos y productos de higiene semanalmente. El
+                                        costo es de 500 euros
                                         mensuales.</li>
-                                    <li><strong>Comedor para niños:</strong> son 35 niños que desayunan y comen
-                                        diariamente de lunes a domingo. Costo: 600 euros mensuales.</li>
+                                    <li><strong>Comedor para niños:</strong> son 35 niños
+                                        que desayunan y comen
+                                        diariamente de lunes a domingo. Costo: 600 euros
+                                        mensuales.</li>
                                 </ul>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
                                     type="button">
@@ -1009,6 +976,13 @@
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <script src="js/counter.js"></script>
     <script src="js/about.js"></script>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/34644526700" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        aria-label="Contactar por WhatsApp">
+        <svg class="icon icon-whatsapp" aria-hidden="true">
+            <use href="#icon-whatsapp" />
+        </svg>
+    </a>
 </body>
 
 </html>
